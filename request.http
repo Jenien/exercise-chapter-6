@@ -1,0 +1,17 @@
+POST http://localhost:3000/api/v1/user/register
+Content-Type: application/json
+
+{
+    "email": "tes4@mail.com",
+    "password": "testpassword"
+}
+###$2b$10$U0WLFebb6VeJcWOvufbwc.LCQAjt8jr30gKplZpanoRwyc1lfzvhS
+###
+POST http://localhost:3000/api/v1/user/login
+Content-Type: application/json
+
+{
+    "email": "tes4@mail.com",
+    "password": "testpassword"
+}
+
