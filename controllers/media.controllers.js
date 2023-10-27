@@ -7,11 +7,11 @@ module.exports = {
             const { first_name, last_name, birth_date } = req.body;
             const profile_picture = req.file;
 
-            // Simpan data di database
+
             const user = await prisma.user.create({
                 data: {
-                    email: req.user.email, // Anda perlu mengganti ini dengan cara Anda mendapatkan email pengguna yang telah terautentikasi
-                    password: 'dummy_password' // Ganti dengan cara Anda menyimpan kata sandi atau token otentikasi
+                    email: req.user.email, 
+                    password: 'isi' 
                 }
             });
 
@@ -21,7 +21,7 @@ module.exports = {
                     firstName: first_name,
                     lastName: last_name,
                     birthDate: birth_date,
-                    profilePicture: profile_picture.path // Anda perlu menyesuaikan dengan cara Anda menyimpan gambar profil
+                    profilePicture: profile_picture.path 
                 }
             });
 

@@ -15,14 +15,14 @@ module.exports = {
     },
     updateProfile: async (req, res) => {
         try {
-            const { userId } = req.user; // Dapatkan ID pengguna dari autentikasi
+            const { userId } = req.user; 
 
             const { first_name, last_name, birth_date } = req.body;
             const profile_picture = req.file;
 
             const updatedProfile = await userProfileModel.updateUserProfile(userId, first_name, last_name, birth_date, profile_picture);
 
-            console.log('updatedProfile:', updatedProfile); // Tambahkan ini untuk memeriksa hasil
+            console.log('updatedProfile:', updatedProfile); 
 
             return res.json({
                 status: true,

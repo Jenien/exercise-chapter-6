@@ -5,7 +5,6 @@ Content-Type: application/json
     "email": "tisuOk@mail.com",
     "password": "testpassword"
 }
-###$2b$10$U0WLFebb6VeJcWOvufbwc.LCQAjt8jr30gKplZpanoRwyc1lfzvhS
 ###
 POST http://localhost:3000/api/v1/user/login
 Content-Type: application/json
@@ -18,7 +17,7 @@ Content-Type: application/json
 ###
 POST http://localhost:3000/api/v1/userProfile/createProfile
 Content-Type: multipart/form-data
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjcsImlhdCI6MTY5ODM2OTQ5MSwiZXhwIjoxNjk4MzczMDkxfQ.gEt3n1KkRDwfBSWzPlRAHJvMRgvIwi61bFbt_qQm6M4
+Authorization: Bearer , eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjcsImlhdCI6MTY5ODM5MTE3NiwiZXhwIjoxNjk4Mzk0Nzc2fQ.oxhk_dXiPwLLyLcHXPKyoSaCqWcDYlcnRcOCutFGuQk
 
 {
 "first_name" : "Tisu",
