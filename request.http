@@ -2,7 +2,7 @@ POST http://localhost:3000/api/v1/user/register
 Content-Type: application/json
 
 {
-    "email": "tisuOk@mail.com",
+    "email": "coba@mail.com",
     "password": "testpassword"
 }
 ###
@@ -10,14 +10,14 @@ POST http://localhost:3000/api/v1/user/login
 Content-Type: application/json
 
 {
-    "email": "tisuOk@mail.com",
+    "email": "coba@mail.com",
     "password": "testpassword"
 }
 
 ###
 POST http://localhost:3000/api/v1/userProfile/createProfile
 Content-Type: multipart/form-data
-Authorization: Bearer , eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjcsImlhdCI6MTY5ODM5MTE3NiwiZXhwIjoxNjk4Mzk0Nzc2fQ.oxhk_dXiPwLLyLcHXPKyoSaCqWcDYlcnRcOCutFGuQk
+Authorization: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjgsImlhdCI6MTY5ODM5MTU5NiwiZXhwIjoxNjk4Mzk1MTk2fQ.nXWfXMdgBoRwp_u7y1JXPoWTgHbWEvKUEHXaapN5zek"
 
 {
 "first_name" : "Tisu",

@@ -64,7 +64,7 @@ module.exports = {
 
     authenticate: async (req, res) => {
         try {
-            
+
             const token = req.header('Authorization').replace('Bearer ', '');
             const decodedToken = jwt.verify(token, process.env.JWT_SECRET);
 
