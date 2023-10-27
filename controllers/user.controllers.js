@@ -65,11 +65,11 @@ module.exports = {
 
     authenticate: async (req, res) => {
         try {
-            // Dapatkan informasi pengguna dari token JWT
+            
             const token = req.header('Authorization').replace('Bearer ', '');
             const decodedToken = jwt.verify(token, process.env.JWT_SECRET);
 
-            // Dapatkan pengguna berdasarkan ID yang diambil dari token
+           
             const user = await userModel.getUserById(decodedToken.userId);
 
             if (!user) {
