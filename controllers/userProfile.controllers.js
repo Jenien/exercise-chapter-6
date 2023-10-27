@@ -3,7 +3,7 @@ const userProfileModel = require('../models/userProfile.model');
 module.exports = {
     updateProfile: async (req, res) => {
         try {
-            const { userId } = req.user; // Dapatkan ID pengguna dari autentikasi
+            const { userId } = req.user;
 
             const { first_name, last_name, birth_date } = req.body;
             const profile_picture = req.file;
